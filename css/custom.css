@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 body {
   /* color: white; */
@@ -131,6 +131,12 @@ footer {
   .map_ {
     iframe {
       height: 300px;
+    }
+  }
+
+  .copyright_ {
+    p {
+      font-size: 12px;
     }
   }
 }
