@@ -3,17 +3,12 @@
 } */
 
 body {
-  /* color: white; */
+  background-color: rgba(235, 235, 235, 1);
   font-family: "Open Sans", sans-serif;
 }
 
 .navbar {
   background-color: rgba(255, 255, 255, 0.4);
-  /* background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.8) 0%,
-    rgba(255, 255, 255, 0) 100%
-  ); */
 }
 
 .navbar-nav {
@@ -31,12 +26,23 @@ body {
 }
 
 .cover_ {
-  background-image: url("../img/673473.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   height: 75vh;
-  padding-top: 300px;
+  width: 100%;
+
+  .cover-pic_ {
+    background-image: url("../img/673473.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    height: inherit;
+    position: fixed;
+    width: inherit;
+    z-index: -1;
+  }
+
+  .cover-title_ {
+    padding-top: 300px;
+  }
 
   h1 {
     font-size: 24px;
@@ -85,7 +91,14 @@ main {
   .section1_ {
     background-color: rgba(255, 255, 255, 1);
     padding: 50px 50px;
-    text-align: justify;
+
+    &.index_ {
+      text-align: justify;
+    }
+
+    p {
+      font-size: 14px;
+    }
   }
 
   .card-body_ {
@@ -137,6 +150,67 @@ footer {
   .copyright_ {
     p {
       font-size: 12px;
+    }
+  }
+}
+
+/* members */
+.person-card_ {
+  font-size: 0;
+
+  .photo_ {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: auto;
+    }
+
+    img {
+      height: 250px;
+      width: 250px;
+    }
+  }
+
+  .profolio_ {
+    margin-top: 14px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+      width: 55%;
+    }
+
+    h3,
+    h4 {
+      text-align: center;
+
+      @media screen and (min-width: 768px) {
+        text-align: left;
+      }
+    }
+
+    .person-icon_ {
+      a {
+        display: inline-block;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 0 5px;
+
+        .fa-envelope {
+          color: rgba(0, 0, 0, 1);
+        }
+
+        .fa-google-scholar {
+          color: rgba(53, 106, 195, 1);
+        }
+
+        .fa-orcid {
+          color: rgba(166, 206, 57, 1);
+        }
+
+        &:nth-of-type(n + 2) {
+          margin-left: 10px;
+        }
+      }
     }
   }
 }
