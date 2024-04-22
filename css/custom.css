@@ -102,7 +102,9 @@ main {
   padding: 50px 50px;
 }
 
-.section1_.index_ {
+.section1_.index_ p,
+.section1_.research_ p,
+.section1_.research_ li {
   text-align: justify;
 }
 
@@ -113,7 +115,7 @@ main {
 
 @media screen and (min-width: 768px) {
   .card-body_ {
-    height: 250px;
+    height: 270px;
   }
 }
 
@@ -263,4 +265,9 @@ footer {
 
 .person-icon_ .fa-orcid {
   color: rgba(166, 206, 57, 1);
+}
+
+/* research */
+.research_ img {
+  width: 100%;
 }
