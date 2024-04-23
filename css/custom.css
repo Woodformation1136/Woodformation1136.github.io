@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 body {
   background-color: rgba(235, 235, 235, 1);
@@ -9,6 +9,7 @@ body {
 
 .navbar_ {
   background-color: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(142, 142, 142, 1);
 }
 
 /* header */
@@ -26,7 +27,8 @@ header .nav-link_.active:hover {
 }
 
 .cover_ {
-  height: 75vh;
+  height: 80vh;
+  padding-top: 300px;
   width: 100%;
 }
 
@@ -37,12 +39,9 @@ header .nav-link_.active:hover {
   background-position: center;
   height: inherit;
   position: fixed;
+  top: 0;
   width: inherit;
   z-index: -1;
-}
-
-.cover-title_ {
-  padding-top: 300px;
 }
 
 .cover-title_ h1 {
@@ -90,12 +89,6 @@ main {
   padding: 50px 0;
 }
 
-@media screen and (min-width: 992px) {
-  .main-container_ {
-    width: 960px;
-  }
-}
-
 /* section */
 .section1_ {
   background-color: rgba(255, 255, 255, 1);
@@ -104,7 +97,8 @@ main {
 
 .section1_.index_ p,
 .section1_.research_ p,
-.section1_.research_ li {
+.section1_.research_ li,
+.section1_.publications_ li {
   text-align: justify;
 }
 
@@ -270,4 +264,24 @@ footer {
 /* research */
 .research_ img {
   width: 100%;
+}
+
+/* publications */
+.publications_ .google-scholar-link_ {
+  color: rgba(53, 106, 195, 1);
+}
+
+.publication-title_ {
+  color: black;
+  text-decoration: underline rgba(88, 138, 223, 1);
+  text-decoration-thickness: 2px;
+  transition: color 0.2s;
+}
+
+.publication-title_:hover {
+  color: rgba(88, 138, 223, 1);
+}
+
+.publications_ li {
+  padding-left: 5px;
 }
