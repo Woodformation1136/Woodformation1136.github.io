@@ -1,6 +1,6 @@
-/* * {
+* {
   outline: 1px solid red;
-} */
+}
 
 body {
   background-color: rgba(235, 235, 235, 1);
@@ -205,6 +205,12 @@ footer {
 @media screen and (min-width: 992px) {
   .profolio_ {
     width: 65%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .profolio_ {
+    width: 50%;
   }
 }
 
