@@ -126,20 +126,39 @@ main {
   margin-top: -140px;
 }
 
+.card-img_ {
+  border-bottom: 1px solid var(--layout-gray);
+  object-fit: cover;
+}
+
 @media screen and (min-width: 768px) {
   .card-body_ {
     height: 270px;
   }
-}
-
-@media screen and (min-width: 768px) {
   .card-body_ h5 {
     height: 80px;
   }
+  .card-img_ {
+    height: 214px;
+  }
 }
+
 @media screen and (min-width: 992px) {
   .card-body_ h5 {
     height: 50px;
+  }
+  .card-img_ {
+    height: 295px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-img_ {
+    height: 355px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .card-img_ {
+    height: 415px;
   }
 }
 
