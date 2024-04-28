@@ -372,3 +372,7 @@ footer {
     max-height: 390.66px;
   }
 }
+
+.photo_.long-photo_ {
+  min-height: auto;
+}
